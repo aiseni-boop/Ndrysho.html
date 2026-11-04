@@ -8,20 +8,42 @@
     <button type="submit" onclick="tekcift()">Kontrollo</button>
     <p id="result"></p>
 
+    <br>
+    <br>
+    <input type="number" id="nr1">
+    <button type="submit" onclick="pozitivnegativ()">Kontrollo1</button>
+
     <script>
 function tekcift()
       {
       var numri=document.getElementById('nr').value;
         if (numri % 2 == 0)
         {
-          document.getElementById('result).innerHTML='Nr cift';
+          document.getElementById('result').innerHTML='Nr cift';
         }
         else
         {
-           document.getElementById('result).innerHTML='Nr tek';
+           document.getElementById('result').innerHTML='Nr tek';
         }
-      
       }
+
+      function pozitivnegativ()
+      {
+        var nr=document.getelementById('nr1').value;
+        if (nr>0)
+        {
+          document.getelementById('result').innerHTML="Pozitiv";
+        }
+        else if(nr<0)
+        {
+           document.getelementById('result').innerHTML="negativ";
+        }
+        else
+        {
+           document.getelementById('result').innerHTML="0";
+        }
+      }
+      
     </script>
   </body>
 </html>
