@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <input type="number" id="mosha">
+    <button type="submit" onclick="kontrollo()">kontrollo</button>
+    <p id="result"></p>
+
+    <script>
+      function kontrollo()
+      {
+var a=document.getElementById('mosha').value;
+        if(a>=18)
+        {
+document.getElementById('result').innerHTML='Je i ritur';
+        }
+        else
+        {
+document.getElementById('result').innerHTML='Je i mitur';
+        }
+      }
+    </script>
+    
+  </body>
+</html>
