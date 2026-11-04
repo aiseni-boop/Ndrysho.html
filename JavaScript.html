@@ -1,0 +1,27 @@
+<html>
+  <head>
+    
+  </head>
+
+  <body>
+<input type="number" id="nr" placeholder="Sheno nr">
+    <button type="submit" onclick="tekcift()">Kontrollo</button>
+    <p id="result"></p>
+
+    <script>
+function tekcift()
+      {
+      var numri=document.getElementById('nr').value;
+        if (numri % 2 == 0)
+        {
+          document.getElementById('result).innerHTML='Nr cift';
+        }
+        else
+        {
+           document.getElementById('result).innerHTML='Nr tek';
+        }
+      
+      }
+    </script>
+  </body>
+</html>
