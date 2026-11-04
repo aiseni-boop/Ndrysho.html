@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <h1>Ndrysho prapavijen</h1>
+    <button type="submit" onclick="prapavija()">ndrysho</button>
+
+    <script>
+      function prapavija()
+      {
+const colors=['red','green','blue'];
+        const index=Math.floor(Math.random()*colors.length);
+        const c=colors[index];
+        document.body.style.backgroundColor=c;
+      }
+    </script>
+  </body>
+</html>
