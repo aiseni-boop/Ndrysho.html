@@ -1,0 +1,29 @@
+<html>
+  <head>
+    
+  </head>
+
+  <body>
+<input type="number" id="nr1" placeholder="Sheno nr">
+    <br>
+    <br>
+    <input type="number" id="nr2">
+    <button type="submit" onclick="kontrollo()">Kontrollo1</button>
+
+       <p id="result"></p>
+<script>
+  function kontrollo()
+  {
+    var a=document.getElementById('nr1').value;
+     var b=document.getElementById('nr2').value;
+    if(a>b)
+    {
+      document.getelementById('result').innerHTML='A me e madhe se B';
+    }
+    else
+        {
+      document.getelementById('result').innerHTML='B me e madhe se A';
+    }
+</script>
+  </body>
+</html>
