@@ -7,9 +7,13 @@
       function prapavija()
       {
 const colors=['red','green','blue'];
+        const colors1=['black','purple','pink'];
         const index=Math.floor(Math.random()*colors.length);
+        const index1=Math.floor(Math.random()*colors1.length);
         const c=colors[index];
+        const c1=colors[index1];
         document.body.style.backgroundColor=c;
+        document.getElementById('ngjyra').style.color=c1;
       }
     </script>
   </body>
